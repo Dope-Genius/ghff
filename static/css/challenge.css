@@ -1,0 +1,182 @@
+.billboard {
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/challenge.jpeg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+.pad-c {
+    padding-top: 5rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+}
+
+.pad-x {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+.challenges {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.challenges p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.birth-1 {
+    background-color: var(--green);
+    color: white;
+}
+.arrow-down {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0rem;
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid white; 
+  }
+
+.arrow-down2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0rem;
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid var(--green);
+  }
+
+  .arrow-down3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0rem;
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid var(--blue);
+  }
+
+
+.count-mil {
+    display: block;
+    width: 17rem;
+    color: var(--green);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+.count-figure {
+    color: var(--blue);
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: .5rem 0;
+}
+
+.pad .small-txt {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.violence {
+    background-color: var(--blue);
+    color: white;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.violence .boys-girls {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.violence span {
+    font-size: 2rem;
+
+}
+
+.violence-2 {
+    color: white;
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(../images/Rape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 30%;
+}
+
+
+.count-percent {
+    font-size: 4rem;
+    display: block;
+    width: 12rem;
+    margin: 1rem auto;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    font-size: 4rem;
+    display: block;
+    margin: 1rem auto;
+    font-weight: bold;
+    color: var(--green);
+}
+
+p .blue {
+    font-size: 4rem;
+    display: block;
+    margin: 1rem auto;
+    font-weight: bold;
+    color: var(--blue)
+}
+
+.unemployment {
+    background-color: var(--green);
+    color: white;
+}
+
+.quote {
+    padding-top: 1.5rem;
+}
+
+.unemployment-2 {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+.this-data {
+    padding: 3rem 3rem;
+    padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .billboard {
+        background-position: 55% 10%;
+    }
+}    
+
+

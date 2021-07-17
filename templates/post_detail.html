@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include 'meta.html' %}
+
+<meta name="description" content="View GoodHopeFlourish Foundation Blog for update and latest news">
+<meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+<meta name="author" content="Best Quotes Nigeria">
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/shared.css' %}">
+<link rel="stylesheet" href="{% static 'css/filter.css' %}">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="stylesheet" href="{% static 'css/blogpost.css' %}">
+<title>Our Blog | GoodHope Flourish</title>
+</head>
+
+<body class="body">
+<header id="navbar">
+  <nav class="pop-nav">
+    <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+    <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+  </nav>
+
+  {% include 'nav.html' %}
+</header>
+
+<nav class="bill-nav">
+  <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo" ></div></a>
+  <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+</nav>
+
+
+<div class="proceed center">
+  <div><i class="fas fa-angle-down"></i></div>
+</div>
+
+<!-- Individual Posts -->
+  <div class="blog-post">
+    <div class="blog-image">
+      <h2 class="blog-header blog-post-header">{{ post.title }}</h2>
+      <p class="blog--date">posted on {{ post.timestamp }}</p>
+        <img src="{{ post.thumbnail.url }}" alt="" class="img">
+    </div>
+
+    <div class="post-content">
+      <!-- <p class="para blog-post-para"> {{ post.overview }} </p> -->
+      <p class="para blog-post-para"> {{ post.content | safe }} </p>
+      <img src="{{ post.content }}" alt="">
+    </div>
+
+    <div class="social-share">
+      <p class="para">Think people should hear about this</p>
+      <ul class="social-links">
+        
+        <li><a href="https://www.facebook.com/sharer.php?u={{ post.get_absolute_url }}"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?text=[post-title]{{ post.get_absolute_url }}"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://twitter.com/share?url={{ post.get_absolute_url }}"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="social-share">
+    <p>Think people should hear about this</p>
+    <ul>
+      <li><i class="fab fa-whatsapp"></i></li>
+      <li><i class="fab fa-whatsapp"></i></li>
+      <li><i class="fab fa-whatsapp"></i></li>
+    </ul>
+  </div> -->
+
+  <section class="statistics pad-x">
+    <div class="stat--text">
+        <p>We are on a <br> mission to help</p>
+        <button class="btn btn--donate">Donate</button>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">500+</div>
+        <div class="count-text">Campaign</div>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">30+</div>
+        <div class="count-text">Donors</div>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">1500</div>
+        <div class="count-text">Lives Saved</div>
+    </div>
+  </section>
+
+  <section class="invitation pad center">
+      <h2 class="main-heading">Join us Now</h2>
+      <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
+      <a href="signup.html"><button class="btn btn--blue">JOIN US</button></a>
+  </section>
+  
+  
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+  
+  </body>
+</html>
+    

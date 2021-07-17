@@ -1,0 +1,31 @@
+.billboard {
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/3kids.jpg');
+  background-position: 60% 35%;
+}
+
+.about-us {
+  display: block;
+}
+
+.small-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold; 
+}
+
+
+.high-lighted_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: var(--green);
+  text-align: center;
+  margin: .5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .billboard {
+    background-position: center;
+  }
+}
+  
+ 

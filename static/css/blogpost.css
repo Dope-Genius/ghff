@@ -1,0 +1,99 @@
+.blog-image img {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid var(--green)
+}
+
+.bill-nav {
+  border-bottom: 1px solid var(--green);
+}
+
+.blog-post {
+  padding: 0 8rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-post {
+    padding: 0 3rem;
+  }
+}
+
+.blog-post-header {
+  font-size: 2.2rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.post-content {
+  width: 100%;
+  font-family: 'Roboto';
+  
+  /* overflow: hidden; */
+}.
+
+element.style {
+  font-family: 'Roboto' sans-serif;
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.post-content img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-content img {
+    width: 100%;
+  }
+}
+
+.blog-post-para {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.blog--date {
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-share .para {
+  color: #585c5e; 
+  margin-top: 2rem;
+  text-align: left;
+}
+
+
+.social-links li {
+  list-style-type: none;
+}
+
+
+.social-links .fab {
+  color: var(--green)
+}
+
+.social-links .fa-facebook {
+  color: #3b5998;
+}
+
+.social-links .fa-whatsapp {
+  color: #08644d;
+}
+
+.social-links .fa-twitter {
+  color: #00aced;
+}
+

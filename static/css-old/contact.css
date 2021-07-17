@@ -1,0 +1,113 @@
+.billboard {
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/little_girl_posing.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-contact {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  flex: 0 0 60%;
+  margin-right: 2rem;
+
+}
+
+.form-col {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.f1 {
+  flex: 0 0 48%;
+}
+
+.f2 {
+  flex: 0 0 40%;
+}
+
+.form-col input {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  color: black;
+  /* font-weight: bold; */
+  padding-bottom: .5rem;
+}
+
+input {
+  width: 100%;
+  border: 1.2px solid var(--green);
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  border: 1.2px solid var(--green);
+
+}
+
+aside {
+  margin-top: 5rem;
+}
+
+.cg .fas {
+  color: var(--green)
+}
+
+
+form .btn--submit {
+  border: 2px solid var(--green);
+  padding: .8rem 1.2rem;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: white;
+}
+
+form p {
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 0;
+}
+
+.prompt {
+  padding-bottom: .5rem;
+}
+
+input[type="submit"] {
+  background-color: var(--green);
+  color: white;
+}
+
+@media only screen and (max-device-width: 900px) {
+
+  .main-contact {
+    display: block;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+.signup input, .signin input {
+  width: 100%;
+  max-width: 30rem;
+}

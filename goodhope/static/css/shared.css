@@ -1,0 +1,27 @@
+.high-lighted_text {
+  font-size: 2rem;
+  color: var(--green);
+  font-family: 'Roboto', sans-serif;
+}
+
+.billboard {
+  height: 80vh;
+}
+
+.billboard--content {
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.billboard--content h2 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-bottom: .8rem;
+}
+
+.content--lead {
+  font-size: 2rem;
+}
+

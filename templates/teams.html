@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="Have a loot at our impact driven team inspiring lives">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/testimony.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/teams.css' %}">
+
+  <title>Our Team | GoodHope Flourish</title>
+</head>
+
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="index.html"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    {% include 'nav.html' %}
+  </header>
+
+  <section class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/teams.jpg' %}); background-position: center;">
+     <nav class="bill-nav">
+      <a href="index.html"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+      <h2>OUR TEAM</h2>
+      <p class="content--lead">An impact driven team inspiring lives</p>
+    </div>
+
+    <div class="proceed center">
+      <!--p>Continue</p-->
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <div class="teams">
+    <div class="team-row">
+
+      <div class="member">
+        <div class="member-image" >
+          <img src="{% static 'images/HUMPHREY C IKEAKA.jpg' %}" alt="">
+        </div>
+        <div class="member-about" id="member">
+          <div class="member-id">
+            <p class="member-name">Humphrey C. Ikeaka</p>
+            <p class="member-position">Director General</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="member-image">
+          <img src="{% static 'images/placeholder.svg' %}" alt="">
+        </div>
+        <div class="member-about">
+          <div class="member-id">
+            <p class="member-name">Izuchukwu A. Ositadimma</p>
+            <p class="member-position">Editor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="member-image">
+          <img src="{% static 'images/chris.jpg' %}" alt="">
+        </div>
+        <div class="member-about">
+          <div class="member-id">
+            <p class="member-name">Christian C. Ikwuwwunna</p>
+            <p class="member-position">Creativity/Branding</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-row">
+      <div class="member">
+        <div class="member-image">
+          <img src="{% static 'images/mabel.png' %}" alt="">
+        </div>
+        <div class="member-about">
+          <div class="member-id">
+            <p class="member-name">Mabel O. Echewune</p>
+            <p class="member-position">Photography</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="member-image">
+          <img src="{% static 'images/placeholder.svg' %}" alt="">
+        </div>
+        <div class="member-about">
+          <div class="member-id">
+            <p class="member-name">Mabel O. Echewune</p>
+            <p class="member-position">Project Manager</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="member-image">
+          <img src="{% static 'images/placeholder.svg' %}" alt="">
+        </div>
+        <div class="member-about">
+          <div class="member-id">
+            <p class="member-name">Samuel Jarvis</p>
+            <p class="member-position">Web Development</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+</body>
+
+</html>

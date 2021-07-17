@@ -1,0 +1,119 @@
+.billboard {
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/sensizaion.jpg');
+    background-position: 20% 30% ;
+    background-size: 1350px 1080px;
+}
+
+.blog {
+    margin: 6rem auto;
+    text-align: left;
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+}
+
+.blog-header {
+    font-family: 'Roboto', sans-serif;
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.blog--image {
+    width: 100%;
+    text-align: center;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.blog--image img {
+    width: 300px;
+    height: 270px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .blog--image:hover .img {
+    opacity: .85;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .blog--image:hover .middle {
+    opacity: 1;
+  }
+
+  .text a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    padding: 1rem 2rem;
+  }
+  
+
+.blog--date {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.blog--para {
+    text-align: left;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.start {
+    margin-top: 2rem;
+}
+
+hr {
+ width: 100%;
+ margin: 1rem 0rem;
+ color: #ccc;
+ height: 1.5px;
+ background-color: #ccc;
+}
+
+@media only screen and (max-device-width: 1000px) { 
+    .blog {
+        margin: 6rem auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content:space-between;
+    }
+
+    .blog-header {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+    
+    .blog--para {
+        line-height: 1.8;
+        text-align: center;
+ }
+}

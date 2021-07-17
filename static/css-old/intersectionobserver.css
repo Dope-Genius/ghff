@@ -1,0 +1,115 @@
+.count-mil {
+    position: relative;
+  }
+  .count-mil:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, white 100%, transparent 0);
+    animation-name: highlight;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal; /* Make the animation run back and forth */
+  }
+
+  .count-percent {
+    position: relative;
+  }
+  .count-percent:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, white 100%, transparent 0);
+    animation-name: background;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal; /* Make the animation run back and forth */
+  }
+
+  .white {
+    position: relative;
+  }
+  .white:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--green) 100%, transparent 0);
+    animation-name: highlight;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal; /* Make the animation run back and forth */
+  }
+
+  .start {
+    position: relative;
+  }
+  .start:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--blue) 100%, transparent 0);
+    animation-name: highlight;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal; /* Make the animation run back and forth */
+  }
+  
+  @keyframes highlight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    50% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+  
+  }
+
+  @keyframes background {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    50% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+  
+  }

@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="About GoodHope Flourish Foundation">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+  <title>About | GoodHope Flourish </title>
+</head>
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+
+    {% include 'nav.html' %}
+
+  </header>
+
+ 
+  <section class="billboard" class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/3kids.jpg' %}); background-position: center;">
+     <nav class="bill-nav">
+      <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+   
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+      <h2> About Us</h2>
+      <p class="content--lead">Know more about Good Hope FLourish Foundation.</p>
+    </div>
+
+    <div class="proceed center">
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <section class="about-us about-main pad">
+    <div class="about--content">
+      <!-- <p class="main-heading">ABOUT US</p> -->
+      <h2 class="main-heading">Who are we?</h2>
+      <p class="para">
+        The conceptualization and consequent birth of GoodHope Flourish Foundation(GHFF)
+        emanated from the raging desire to  improve the standard of living of our people, especially the indigent,  through quality Education, Accessible Health Care, Reduction of Gender- Based Violence and Maternal/Infant mortality, Enlightenment on Girl-Child Development, Engaging people with Special needs, as well as  Persons Living with Disabilities(PLWD), reducing unemployment to its barest minimum, among others. <br><br>
+        Our advocacy is geared toward social, educational and economic empowerment by way of Capacity-building to foster ownership among all individuals in our state, and by extension, our country as a whole. This would positively impact our society, as accountability mechanisms would be put in place for adequate checks and balances.<br><br>
+        We are committed to fulfilling our mandate through solid affiliations and partnerships, in line with our goals, objectives and vision for the Foundation.<br>
+        <h1 class="high-lighted_text">To inspire hope  and make life worth living and flourishing for all and sundry.</h1></p>
+    </div>  
+  </section>
+
+  <section class="objectives pad">
+    <h2 class="main-heading center">Core Objectives</h2>
+    <hr> 
+    <div class="obj--group">      
+      <div class="objectives--cards">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="card-info">
+            <h3>Health Care</h3>
+            <p>Improve quality of health care delivery for pregnant women/adolescent girls and provide extensive care to infants through nutrition and immunization</p>
+          </div>
+        </div>
+  
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-info-circle"></i></div>
+          <div class="card-info">
+            <h3>Sensitization</h3>
+            <p> Sensitization on personal hygiene, safe practices and mental health awareness</p>
+          </div>
+        </div>
+        
+        <div class="card card-3" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="card-info">
+            <h3>Education</h3>
+            <p> Promote quality education as fundamental human right through ensuring equal access and support for conducive learning </p>
+          </div>
+        </div>
+  
+        <div class="card card-4" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-bullhorn"></i></div>
+          <div class="card-info">
+            <h3>Campaign</h3>
+            <p>Creating campaign programs that span across prevention and managing of infectious diseases and infected persons</p>
+          </div>
+        </div>
+  
+        <div class="card card-5" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-venus-mars"></i></i></div>
+          <div class="card-info">
+            <h3>Advocacy</h3>
+            <p>Advocate for the elimination of gender based violence, female genital mutilation and support for gender equality and human rights</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mis-vis pad">
+    <div class="mission" data-aos="zoom-in" data-aos-duration="800">
+      <h2 class="main-heading">Our Mission</h2>
+      <hr > 
+
+      <p>To inspire hope, improve health and educational standards through service, research and impact</p>
+    </div>
+
+    <div class="mission" data-aos="zoom-in" data-aos-duration="800">
+      <h2 class="main-heading">Our Vision</h2>
+      <hr > 
+
+      <p>To be the unparalleled leader in improving the standard of living, education and health care in Nigerian states and communities</p>
+    </div>
+
+  </section>
+
+  <div class="work center pad">
+    <a href="#" class="btn btn--work">VIEW OUR WORK</a>
+  </div>
+
+  <section class="statistics pad-x">
+    <div class="stat--text">
+      <p>We are on a mission to help</p>
+      <a href="{% url 'donate' %}" class="btn btn--donate">DONATE</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">500+</div>
+        <div class="count-text">Campaign</div>
+      </div>
+  
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">30+</div>
+        <div class="count-text">Donors</div>
+      </div>
+  
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">1500</div>
+        <div class="count-text">Lives Saved</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="work center pad">
+    <a href="{% url 'teams' %}" class="btn btn--work"> OUR TEAM</a>
+  </div>
+
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+
+  
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/nav.js"></script>
+  <script src="js/header.js"></script> -->
+</body>
+
+</html>

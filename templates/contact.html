@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="Contact us for more information and how to get Involved.">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  
+  <title>Contact Us | GoodHope Flourish</title>
+</head>
+
+<body class="body">
+<header id="navbar">
+  <nav class="pop-nav">
+    <a href="index.html"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+    <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+  </nav>
+  {% include 'nav.html' %}
+</header>
+
+
+<section class="billboard" class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/little_girl_posing.jpg' %}); background-size: cover; background-position: center;">
+  <nav class="bill-nav">
+    <a href="{url 'index.html' %}">
+      <div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+    <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+  </nav>
+  
+  <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+    <h2>CONTACT US</h2>
+    <p class="content--lead">Need help? or want to be a part of helping others, please reach out to us</p>
+  </div>
+
+  <div class="proceed center">
+    <div><i class="fas fa-angle-down"></i></div>
+  </div>
+</section>
+
+  <section class="main-contact pad">
+
+    <form action="{% url 'contact' %}" method="POST" class="form">
+      {% csrf_token %}
+      <h2 class="main-heading" style="padding-bottom: 1rem">Reach out to Us</h2>
+      <!-- <div class="form-col"> -->
+        <div class="form-group f1">
+          <label for="name">Full Name</label>
+          <input type="text" name="fullname" id="" required>
+        </div>
+
+        <div class="form-group f1">
+          <label for="Email">Email</label>
+          <input type="email" name="email" id="" required>
+        </div>  
+      <!-- </div> -->
+
+      <div class="form-group">
+        <label for="name">Subject</label>
+        <input type="text" name="subject" id="" required>
+      </div>
+
+      <input type="hidden" name="date">
+
+      <div class="form-group">
+        <label for="name">Message</label>
+        <textarea name="message" id="" cols="30" rows="10" required></textarea>
+      </div>
+
+      <input type="submit" value="Submit" class="btn--donate">
+    </form>
+
+    <aside>
+      <div class="contact-group cg">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="contact--location"> Office of the Wife of The Governor, Imo State. Government House Owerri, Imo State</p>
+      </div>
+
+      <div class="contact-group cg">
+        <i class="fas fa-phone-alt"></i>
+        <p class="contact--phone"> 08025455169</p>
+      </div>
+
+      <div class="contact-group cg">
+        <i class="fas fa-envelope"></i>
+        <p class="contact--email"> info@goodhopeflourish.org</p>
+      </div>
+    </div>
+    </aside>
+  </section>
+
+  <section class="statistics pad-x">
+    <div class="stat--text">
+      <p>We are on a <br> mission to help</p>
+      <button class="btn btn--donate">Donate</button>
+    </div>
+
+    <div class="stat--count">
+      <div class="count-no">500+</div>
+      <div class="count-text">Campaign</div>
+    </div>
+
+    <div class="stat--count">
+      <div class="count-no">30+</div>
+      <div class="count-text">Donors</div>
+    </div>
+
+    <div class="stat--count">
+      <div class="count-no">1500</div>
+      <div class="count-text">Lives Saved</div>
+    </div>
+  </section>
+
+  <section class="invitation pad center">
+    <h2 class="main-heading">Join us Now</h2>
+    <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
+    <button class="btn btn--blue">JOIN US</button>
+  </section>
+
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+</body>
+</html>

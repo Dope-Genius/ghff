@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="Good Hope Flourish is a Non Governmental Organization with a desire to  improve the standard of living of our people, through providing healthcare, education advocacy....">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/slideH.css' %}">
+  <link rel="stylesheet" href="{% static 'css/testimony.css' %}">
+
+  <title>GoodHope Flourish Foundation</title>
+</head>
+
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="{% url 'index' %}" <div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    
+  {% include 'nav.html' %}
+
+  </header>
+ 
+  <section class="billboard">
+     <nav class="bill-nav">
+      <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+   
+    <div class="slide">
+      <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>image 04</span></li>
+      </ul>
+    </div>
+
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+      <h2> Inspiring Hope <br> Flourishing Lives...</h2>
+      <p class="content--lead">Everyday, It is an obligation for us to see that people's <br> hopes are inspired and their lives flourish.</p>
+      <a href="{% url 'donate' %}" class="btn btn--donate blue">DONATE</a>
+    </div>
+
+    <div class="proceed center">
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <section class="about-us pad" data-aos="fade-up" data-aos-duration="3800">
+    <h2 class="main-heading center">About Us</h2>
+
+    <hr> 
+
+    <div class="about-float">
+      <div class="about--content" data-aos="fade-up" data-aos-duration="3800">
+        <p class="para">
+          The conceptualization and consequent birth of GoodHope Flourish Foundation(GHFF)
+          emanated from the raging desire to  improve the standard of living of our people, especially the indigent,  through quality Education, Accessible Health Care, Reduction of Gender Based Violence, Maternal and Infant mortality, Enlightenment on Girl-Child Development, Engaging people with Special needs, as well as  Persons Living with Disabilities (PLWD), reducing unemployment to its barest minimum, among others [...]
+        </p>
+        <a href="{% url 'about' %}" class="btn start">Read More</a>
+        <!-- <button class="btn btn--donate">Read More</button> -->
+      </div>
+  
+    </section>
+  </div>
+
+  <section class="objectives pad">
+    <div class="arrow-down"></div>
+    <h2 class="main-heading center">Core Objectives</h2>
+    <hr> 
+    <div class="obj--group">      
+      <div class="objectives--cards">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="card-info">
+            <h3>Health Care</h3>
+            <p>Improve quality of health care delivery for pregnant women/adolescent girls and provide extensive care to infants through nutrition and immunization</p>
+          </div>
+        </div>
+  
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-info-circle"></i></div>
+          <div class="card-info">
+            <h3>Sensitization</h3>
+            <p> Sensitization on personal hygiene, safe practices and mental health awareness</p>
+          </div>
+        </div>
+        
+        <div class="card card-3" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="card-info">
+            <h3>Education</h3>
+            <p> Promote quality education as fundamental human right through ensuring equal access and support for conducive learning </p>
+          </div>
+        </div>
+  
+        <div class="card card-4" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-bullhorn"></i></div>
+          <div class="card-info">
+            <h3>Campaign</h3>
+            <p>Creating campaign programs that span across prevention and managing of infectious diseases and infected persons</p>
+          </div>
+        </div>
+  
+        <div class="card card-5" data-aos="fade-up" data-aos-duration="800">
+          <div class="icon"><i class="fas fa-venus-mars"></i></i></div>
+          <div class="card-info">
+            <h3>Advocacy</h3>
+            <p>Advocate for the elimination of gender based violence, female genital mutilation and support for gender equality and human rights</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="mis-vis pad">
+    <div class="mission" data-aos="zoom-in" data-aos-duration="800">
+      <h2 class="main-heading">Our Mission</h2>
+      <hr > 
+
+      <p>To inspire hope, improve health and educational standards through service, research and impact</p>
+    </div>
+
+    <div class="mission" data-aos="zoom-in" data-aos-duration="800">
+      <h2 class="main-heading">Our Vision</h2>
+      <hr > 
+
+      <p>To be the unparalleled leader in improving the standard of living, education and health care in Nigerian states and communities</p>
+    </div>
+
+  </section>
+
+  <div class="work center pad">
+    <div class="arrow-down"></div>
+    <p class="intro"></p>
+    <div><i class="fas fa-angle-down black"></i></div>
+    <a href="#" class="btn btn--work">VIEW OUR WORK</a>
+  </div>
+
+  <section class="statistics">
+    <div class="stat--text">
+      <p>We are on a mission <br> to help</p>
+      <a href="{$ url 'donate' %}" class="btn btn--donate">DONATE</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">500+</div>
+        <div class="count-text">Campaign</div>
+      </div>
+  
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">30+</div>
+        <div class="count-text">Donors</div>
+      </div>
+  
+      <div class="stat--count" data-aos="fade-left" data-aos-duration="700">
+        <div class="count-no">1500</div>
+        <div class="count-text">Lives Saved</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-news pad">
+    <h2 class="main-heading center">Latest News from our Blog</h2>
+
+    <div class="news-col">
+      {% for obj in object_list %}
+      <div class="news">
+        <div class="news--image "><img src="{{ obj.thumbnail.url }}" alt=""></div>
+        <div class="news--text">
+          <h3 class="text--heading">{{ obj.title }}</h3>
+          <div class="text--para" style="padding-top: 10px; font-size: 18px;">{{ obj.overview }}</div>
+        </div>
+        <div class="news--more">
+          <p>{{ obj.timestamp|timesince }} ago</p>
+          <a href="{{ obj.get_absolute_url }}" class="btn btn--donate">Read More</a>
+        </div>
+      </div>
+      {% endfor %}
+
+      <!-- <div class="news">
+        <div class="news--image"><img src="{%static 'images/ncsimage.jpg' %}" alt=""></div>
+        <div class="news--text">
+          <h3 class="text--heading">Visit to the Nigeria Correctional Service (NCS) centre</h3>
+        </div>
+        <div class="news--more">
+          <p>28/02/2020</p>
+          <a href="blog.html" class="btn btn--donate">Read More</a>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="news--image"><img src="{%static 'images/smile.jpg' %}" alt=""></div>
+        <div class="news--text">
+          <h3 class="text--heading">Visit to the Nigeria Correctional Service (NCS) centre</h3>
+        </div>
+        <div class="news--more">
+          <p>28/02/2020</p>
+          <a href="blog.html" class="btn btn--donate">Read More</a>
+        </div>
+      </div> -->
+  </section>
+
+  <div class="work center pad">
+    <div class="arrow-down"></div>
+    <p class="intro">Meet our impact driven team that inspire lives</p>
+    <div><i class="fas fa-angle-down black"></i></div>
+    <a href="{% url 'teams' %}" class="btn btn--work"> OUR TEAM</a>
+  </div>
+
+  <section class="testimonial pad">
+    <h2 class="main-heading center" style="color: white">Testimonials</h2>
+    <hr > 
+
+
+    <div class="testimony-row">
+      <div class="testimony fade" data-aos=fade-left data-aos-duration="800">
+        <div class="quote-mark">&#8220;</div>
+        <p class="para">Knowing that the gospel is true is the essence of a testimony. Consistently being true to the gospel is the essence of conversion.
+         </p>
+        <p class="testimony--name">Alex Sunday</p>
+        <p class="testimony--state">Rivers State</p>
+      </div>
+
+      <div class="testimony fade">
+        <div class="quote-mark">&#8220;</div>
+        <p class="para">GoodHope Flourish Founation is God sent they came when i had lost all hope, and helped me with my health and provided us with water </p>
+        <p class="testimony--name">Alex Sunday</p>
+        <p class="testimony--state">Rivers State</p>
+      </div>
+
+      <div class="testimony fade">
+        <div class="quote-mark">&#8220;</div>
+        <p class="para">Knowing that the gospel is true is the essence of a testimony. Consistently being true to the gospel is the essence of conversion.
+          </p>
+        <p class="testimony--name">Alex Sunday</p>
+        <p class="testimony--state">Rivers State</p>
+      </div>
+
+      <div class="testimony fade">
+        <div class="quote-mark">&#8220;</div>
+        <p class="para">GoodHope Flourish Founation is God sent they came when i had lost all hope, and helped me with my health and provided us with water </p>
+        <p class="testimony--name">Alex Sunday</p>
+        <p class="testimony--state">Rivers State</p>
+      </div>
+  
+      <!-- <div class="testimony" data-aos="fade-up-right" data-aos-duration="1000">
+        <p class="para">GoodHope Flourish is God sent they came when i had lost all hope</p>
+        <p class="testimony--name">Alex Sunday</p>
+        <p class="testimony--state">Rivers State</p>
+      </div> -->
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+  </section>
+
+
+  <section class="invitation pad center">
+    <h2 class="main-heading">Join us Now</h2>
+    <hr > 
+
+    <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
+    <a href="getinvolved.html" class="btn btn--work">GET INVOLVED</a>
+  </section>
+
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+</body>
+
+</html>

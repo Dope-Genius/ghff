@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include 'meta.html' %}
+
+<meta name="description" content="View GoodHopeFlourish Foundation Blog for update and latest news">
+<meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+<meta name="author" content="Best Quotes Nigeria">
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/shared.css' %}">
+<link rel="stylesheet" href="{% static 'css/filter.css' %}">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<title> Our Blog | GoodHope Flourish</title>
+</head>
+
+<body class="body">
+<header id="navbar">
+  <nav class="pop-nav">
+    <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+    <div class="menu">MENU<i class="fas fa-bars"></i></div>
+  </nav>
+
+  {% include 'nav.html' %}
+</header>
+
+<section class="billboard" class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/sensizaion.jpg' %}); background-position: center; background-size: cover;">
+    <nav class="bill-nav">
+    <a href="index.html"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+    <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+  </nav>
+  
+  <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+    <h2>BLOG</h2>
+    <p class="content--lead">Stay informed as we inspire hope and flourish lives</p>
+  </div>
+  
+  <div class="proceed center">
+    <div><i class="fas fa-angle-down"></i></div>
+  </div>
+</section>
+
+<div class="bg">
+  <!-- <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Filter Category</button>
+    <div class="arrow-down"></div>
+    <div id="myDropdown" class="dropdown-content">
+      <button type="submit"></button>
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#">Education</a>
+      <a href="#">Health Care</a>
+      <a href="#">Advocacy</a>
+      <a href="#">Campaign</a>
+      <a href="#">Sensitization</a>
+    </div>
+  </div> -->
+  </div>
+
+  <!-- All Blog Posts -->
+  <section>
+    {% for post in queryset %}
+    <div class="blog">
+      <div class="blog--image">
+          <img src="{{ post.thumbnail.url }}" alt="" class="img">
+      </div>
+  
+      <div>
+          <h2 class="blog-header">{{ post.title }}</h2>
+          <p class="para blog--para">
+          {{ post.overview}}  
+          </p>
+          <p class="blog--date">posted on {{ post.timestamp}}</p>
+          <a href="{{ post.get_absolute_url }}" class="btn start">Read More</a>
+        </div>
+      </div>
+    </div>  <!-- <hr> -->
+    {% endfor %}
+
+    <!-- Pagination -->
+    <div class="pagination">
+      {% if queryset.has_previous %}
+      <a href="?{{ page_request_var }}={{ queryset.previous_page_number}}">&laquo;</a>
+      {% endif %}
+      <a href="#" class="active">{{ queryset.number }}</a>
+      {% if queryset.has_next %}
+      <a href="?{{ page_request_var }}={{ queryset.next_page_number}}">&raquo;</a>
+      {% endif %}
+    </div>
+    
+  </section>
+  
+  <section class="statistics pad-x">
+    <div class="stat--text">
+        <p>We are on a <br> mission to help</p>
+        <button class="btn btn--donate">Donate</button>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">500+</div>
+        <div class="count-text">Campaign</div>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">30+</div>
+        <div class="count-text">Donors</div>
+    </div>
+
+    <div class="stat--count">
+        <div class="count-no">1500</div>
+        <div class="count-text">Lives Saved</div>
+    </div>
+  </section>
+
+  <section class="invitation pad center">
+      <h2 class="main-heading">Join us Now</h2>
+      <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
+      <a href="signup.html"><button class="btn btn--blue">JOIN US</button></a>
+  </section>
+  
+  
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+  
+  </body>
+</html>
+    

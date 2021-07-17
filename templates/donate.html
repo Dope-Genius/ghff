@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="Make a donation to a Cause you Support">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/donate.css' %}">
+  <title>Donations | GoodHope Flourish</title>
+</head>
+
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    {% include 'nav.html' %}
+  </header>
+
+  <section class="billboard" class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/children.jpg' %}); background-position: center;">
+      <nav class="bill-nav">
+      <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+      <h2> DONATE</h2>
+      <p class="content--lead">Be part of our journey of Inspiring Hope and Flourishing Lives</p>
+    </div>
+
+    <div class="proceed center">
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <div>
+    <p class="main-heading center">Support <br> our Work</p>
+    <p class="para donate--para"> With dedication to impact, we are building a society where hope is renewed and lives ﬂourish through commitment and collective effort.</p>
+    <hr>
+    <p class="quote"> you too can inspire hope. <br> today!</p>
+  </div>
+  
+  <section class="donate">
+    <div class="donate__causes">
+
+      <div class="donate-row">
+        <div class="donate__card donate__card--1" style="background-image: url({% static 'images/Educaion.jpg' %});">
+          <div class="arrow-down"></div>
+          <p data-aos="fade-right" data-aos-duration="3000">EDUCATION IS <br> FOUNDATION <br> TO A BETTER <br>FUTURE </p>
+          <div class="donate-button">
+            <a href="blog.html" class="btn btn--donate center">Donate</a>
+          </div>
+        </div>
+        
+        <div class="donate__card donate__card--2" style="background-image: url({% static 'images/healh care.jpg' %});">
+          <div class="arrow-down2"></div>
+          <p data-aos="fade-right" data-aos-duration="3000">MOTHERS AND <br> THEIR BABIES <br> DESERVES <br> GOOD <br> HEALTH</p>
+          <div class="donate-button">
+            <a href="blog.html" class="btn btn--donate center btn2">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="human-right center">
+      <h2 class="main-heading center">WE SUPPORT <br> HUMAN RIGHTS</h2>
+      <p class="para">Together, we will advocate, campaign and sensitize <br> our communities and society at large</p>
+      <a href="blog.html" class="btn btn--donate center">Donate</a>
+      <hr>
+      <p class="quote">be the reason why someone <br> is inspired, today!</p>
+    </div>
+    
+
+    <div class="donate__account">
+      <h3> MAKE A DIRECT TRANSFER </h3>
+  
+        Domestic Payments ( ₦ ) <br>
+        
+        Guaranty Trust Bank<br>
+        Account Name: Good Hope Flourish <br>
+        Account Number: 02***99346 <br>
+    </div>
+  </section>
+
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/nav.js"></script>
+  <script src="js/header.js"></script>
+</body>
+
+</html>

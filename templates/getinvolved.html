@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="We need your talent and skills, join us to inspire hope and flourish lives">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/Intersectionobserver.css' %}">
+  <link rel="stylesheet" href="{% static 'css/getinvolved.css' %}">
+
+  <title>Get Involved | GoodHope Flourish</title>
+</head>
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    {% include 'nav.html' %}
+  </header>
+
+  <section class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/getinvolved.jpg' %}); background-position: center;">
+      <nav class="bill-nav">
+      <a href="index.html"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
+      <h2>GET INVOLVED</h2>
+      <p class="content--lead">Join us and find out how you can inspire hope and flourish lives</p>
+    </div>
+
+    <div class="proceed center">
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <div class="get-involved">
+    <div class="involve" >
+      <p class="main-heading">VOLUNTEERING</p>
+      <hr> 
+      <p class="text"  data-aos="fade-up" data-aos-duration="800">We believe that everyone has a great will to act freely towards the growth of their communities and contribute to a better society through rendering selfless services. You can become a GHFF volunteer and join our mission to inspire hope and flourish the lives of people.</p>
+    </div>
+
+    <div class="involve involve-2">
+      <div class="arrow-down"></div>
+      <p class="main-heading">SPONSORHIP</p>
+      <hr> 
+      <p class="text"  data-aos="fade-up" data-aos-duration="800">Goodhope Flourish Foundation is a non-profit organization creating initiatives, programs and campaigns that support healthcare, education, sensitization and Advocacy for  indigents, people Living with disabilities, girlchild and human rights. Without your support we can not inspire hope or flourish lives. You can sponsor a program or campaign</p>
+    </div>
+
+    <div class="involve">
+      <p class="main-heading">PARTNERSHIP</p>
+      <hr> 
+      <p class="text"  data-aos="fade-up" data-aos-duration="800">Partnerships are gateway to achieving our core objectives as a foundation. That's why it is our greatest delight to welcome you as a partner. GHFF is an organization with professional operational standard and principles, together we will impact the lives of people.</p>
+    </div>
+
+    <div class="involve involve-contact">
+      <div class="arrow-down"></div>
+      <p class="main-heading">TOGETHER WE WILL INSPIRE HOPE</p>
+      <hr> 
+      <p class="text">Get involved today, contact us</p>
+
+      <div class="involve-btn">
+        <a href="contact.html" class="btn btn--work"> CONTACT US</a>
+      </div>
+    
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'meta.html' %}
+
+  <meta name="description" content="The challenges we are working towards">
+  <meta name="keywords" content="NGO, Nigeria, GoodHope, charity, health, education">
+  <meta name="author" content="Best Quotes Nigeria">
+  <meta name="robots" content="index, follow" />
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/testimony.css' %}">
+  <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+  <link rel="stylesheet" href="{% static 'css/intersectionobserver.css' %}">
+  <link rel="stylesheet" href="{% static 'css/challenge.css' %}">
+
+  <title>The Challenge | GoodHope Flourish</title>
+</head>
+<body class="body">
+  <header id="navbar">
+    <nav class="pop-nav">
+      <a href="{% url 'index' %}"><div class="logo"><img src="{% static 'images/goodhope logo.jpg' %}" alt="goodhope logo"></div></a>
+      <div class="menu">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+    {% include 'nav.html' %}
+  </header>
+
+  <section class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/challenge.jpeg' %})">
+     <nav class="bill-nav">
+      <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" ></div></a>
+      <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1200">
+      <h2>The Challenge</h2>
+      <p class="content--lead">Everyone deserves a better life, unfortunately the indices is not favorable</p>
+    </div>
+
+    <div class="proceed center">
+      <div><i class="fas fa-angle-down"></i></div>
+    </div>
+  </section>
+
+  <div class="challenges">
+    <div class="pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <p>Despite being the largest economy in Africa, social ineqaulity, gender, health and economic indicators have not advanced considerably.</p>
+    </div>
+  
+    <div class="birth-1 pad-c" data-aos="fade-up" data-aos-duration="1200">
+      <div class="arrow-down"></div>
+      <p> ABOUT <span class="count-mil">40 MILLION</span> BIRTHS OCCUR WITHOUT THE ASSISTANCE OF A SKILLED PERSONNEL.</p>
+    </div>
+  
+    <div class="pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <p> <span class="count-figure">830</span>women die each day as a result of preventable complications relating to pregnancy</p>
+      <p class="small-txt">According to African Journal or Reproductive Health (sept. 2017)</p>
+    </div>
+  
+    <div class="violence pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <div class="arrow-down"></div>
+      <p>According to 2015 UNICEF report</p>
+      <p data-aos="fade-right" data-aos-duration="3000" class="boys-girls">ONE <br><span>IN</span> FOUR GIRLS <br> <span>AND</span> <br> ONE <br> <span>IN</span> TEN BOYS</p>
+      <P>in Nigeria had experienced sexual violence before the age of 18</P>
+    </div>
+  
+    <div class="violence-2 pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <div class="arrow-down3"></div>
+      <p>OVER <span class="count-percent">31.4%</span> OF GIRLS SAID THEIR FIRST SEXUAL ENCOUNTER HAD BEEN RAPED OR FORCED SEX 0F SOME KIND
+      </p>
+    </div>
+  
+    <div class="pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <p> NIGERIA'S UNEMPLOYMENT RATE AS AT Q2 OF 2020 IS <span class="count-percent white">27.1%</span> indicating that about <span class="green">21.7 <br> MILLION</span> NIGERIANS REMAIN UNEMPLOYED.</span></p>
+    </div>
+  
+    <div class="pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <p>Nigeria's unemployment and underemployment  rate(28.6%) is a combined <span class="count-percent white">55.7% </span></p>
+    </div>
+  
+    <div class="unemployment pad-c"  data-aos="fade-up" data-aos-duration="1200">
+      <div class="arrow-down"></div>
+      <p>Contained in a recently released employment data report published by the National Bureau of Statistics. Nigeria's unemployment rate was 23.1% in Q3 of 2018, confirming a 4% increase between then and Q2 of 2020</p>
+  
+      <br><p >OVER <span class="count-mil"  data-aos="fade-up" data-aos-duration="1800">13.9 MILLION</span> PEOPLE AGED BETWEEN 15 AND 35 YEARS UNEMPLOYED</p>
+    </div>
+  
+    <div class="unemployment-2"  data-aos="fade-up" data-aos-duration="1000">
+      <div class="arrow-down2"></div>
+      <p class="this-data">The data also shows 7.6 million of this subset did nothing.</p>
+  
+      <p class="pad-x quote"  data-aos="fade-up" data-aos-duration="1200">WOMEN ALSO CONTINUE TO BEAR THE BRANCH OF THE BAD ECONOMY WITH 12.2 MILLION OUT JOBS FROM THE 27 MILLION CURRENTLY UNEMPLOYED</p>
+  
+      <p class="pad-c"  data-aos="fade-up" data-aos-duration="1200">ABOUT <span class="count-mil blue" data-aos="fade-down" data-aos-duration="1800">2.9 MILLION</span> OF THE TOTAL UNEMPLOYED NIGERIANS ARE GRADUATES AND POST-GRADUATES</p>
+  
+      <p class="pad-x"  data-aos="fade-up" data-aos-duration="1200">In a surprising data out of the <span class="start">35.5 million</span> Nigerians that are fully employed 28.8 million</span> never attended school(6.29 million) or did not have a tertiary education(22.5 million)</p>
+  
+      <p class="pad-c">In fact, most fully employed people in Nigeria with Senior Secondary School Certificate are a whopping <span class="blue" data-aos="fade-right" data-aos-duration="1800">40 <br> MILLION</span> </p>
+    </div>
+  </div>
+
+  </div>
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+
+
+</body>
+
+</html>
