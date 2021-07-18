@@ -141,6 +141,8 @@ hr {
         flex-direction: column;
         width: 80%;
         justify-content:space-between;
+        padding: 0;
+
     }
 
     .blog-header {

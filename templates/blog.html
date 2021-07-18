@@ -17,6 +17,34 @@
 <title> Our Blog | GoodHope Flourish</title>
 </head>
 
+<style>
+  @media only screen and (max-device-width: 700px) { 
+    .blog {
+        margin: 6rem auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content:space-between;
+        padding: 0;
+    }
+
+    .blog--image {
+      max-width: 40rem;
+      object-fit: cover;
+      object-position: bottom;
+      text-align: center;
+    }
+
+  .blog-content {
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+  }
+  }
+
+
+</style>
+
 <body class="body">
 <header id="navbar">
   <nav class="pop-nav">
@@ -62,17 +90,17 @@
   <!-- All Blog Posts -->
   <section>
     {% for post in queryset %}
-    <div class="blog">
-      <div class="blog--image">
+    <div class="blog" style="border-radius: 10px;">
+      <div class="blog--image" style="margin: 0 auto; border-radius: 10px;">
           <img src="{{ post.thumbnail.url }}" alt="" class="img">
       </div>
   
-      <div>
+      <div class="blog-content">
           <h2 class="blog-header">{{ post.title }}</h2>
           <p class="para blog--para">
           {{ post.overview}}  
           </p>
-          <p class="blog--date">posted on {{ post.timestamp}}</p>
+          <p class="blog--date">posted on {{ post.timestamp }}</p>
           <a href="{{ post.get_absolute_url }}" class="btn start">Read More</a>
         </div>
       </div>

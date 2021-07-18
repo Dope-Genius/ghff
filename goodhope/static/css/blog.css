@@ -26,7 +26,6 @@
 }
 
 .blog--image {
-    max-width: 20rem;
     padding-right: 2rem;
     /* height: 300px; */
     object-fit: cover;
@@ -141,6 +140,7 @@ hr {
         flex-direction: column;
         width: 80%;
         justify-content:space-between;
+        padding: 0;
     }
 
     .blog-header {
