@@ -40,18 +40,18 @@
 
 
 .cb-slideshow li:nth-child(1) span { 
-	background-image: url(/static/images/little_girl_posing.jpg);
+	background-image: url(https://www.linkpicture.com/q/little_girl_posing.jpg);
 }
 .cb-slideshow li:nth-child(2) span { 
-	background-image: url(/static/images/woman_carrying_child.jpg);
+	background-image: url(https://www.linkpicture.com/q/woman_carrying_child.jpg);
 	animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-	background-image: url(/static/images/3kids.jpg);
+	background-image: url(https://www.linkpicture.com/q/3kids.jpg);
 	animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span { 
-	background-image: url(/static/images/campaign.jpg);
+	background-image: url(https://www.linkpicture.com/q/campaign.jpg);
 	animation-delay: 18s; 
 }
 

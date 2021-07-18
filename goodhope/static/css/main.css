@@ -455,28 +455,26 @@ ul .active:hover {
 }
 
 .card-2 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/sensitization.jpg);
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/sensitization.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .card-3 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/Educaion.jpg);
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/Educaion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .card-4 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/campaign2.jpg);
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/campaign.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .card-5 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/My\ Photos-9.jpg);
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/My-Photos-9.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -565,7 +563,7 @@ ul .active:hover {
   align-items: center;
   text-align: center;
   background: linear-gradient(180deg, #5A962F 8.96%, rgba(72, 117, 40, 0.77) 100.65%, rgba(255, 255, 255, 0) 93.100%),
-  url("/static/images/woman_carrying_child.jpg");
+  url(https://www.linkpicture.com/q/woman_carrying_child.jpg);
   min-height: 12rem;
   padding: 2rem 2rem;
 }
@@ -673,7 +671,7 @@ ul .active:hover {
 
 /* styling for testimonials */
 .testimonial {
-  background: linear-gradient(180deg, #5A962F 8.96%, rgba(72, 117, 40, 0.77) 100.65%, rgba(255, 255, 255, 0) 93.100%), url("/static/images/woman_carrying_child.jpg");
+  background: linear-gradient(180deg, #5A962F 8.96%, rgba(72, 117, 40, 0.77) 100.65%, rgba(255, 255, 255, 0) 93.100%), url(https://www.linkpicture.com/q/woman_carrying_child.jpg);
 }
 
 .testimony {
