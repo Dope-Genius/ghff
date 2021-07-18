@@ -1,5 +1,5 @@
 .billboard {
-    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/static/images/teams.jpg');
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), ;
     background-position: 10% 30%;
     background-size: cover;
     background-repeat: no-repeat;
