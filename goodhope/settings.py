@@ -1,7 +1,7 @@
 import os
 from decouple import config
 import dj_database_url 
-from storages.backends.s3boto3 import 
+# from storages.backends.s3boto3 import 
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
