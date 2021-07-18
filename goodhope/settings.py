@@ -136,6 +136,7 @@ AWS_DEFAULT_ACL = None
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400',}
 AWS_S3_FILE_OVERWRITE = False
+AWS_S3_REGION_NAME = 'eu-west-3'
 
 AWS_LOCATION = 'static'
 
