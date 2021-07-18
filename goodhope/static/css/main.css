@@ -455,28 +455,28 @@ ul .active:hover {
 }
 
 .card-2 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/static/images/sensitization.jpg');
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/sensitization.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 .card-3 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/static/images/Educaion.jpg');
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/Educaion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 .card-4 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/static/images/campaign2.jpg');
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/campaign2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 .card-5 {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url("/static/images/My\ Photos-9.jpg");
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(/static/images/My\ Photos-9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
