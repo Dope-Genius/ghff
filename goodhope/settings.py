@@ -187,4 +187,4 @@ TINYMCE_DEFAULT_CONFIG = {
     }
 
 import django_heroku
-django_heroku.settigns(locals())
+django_heroku.settings(locals())
