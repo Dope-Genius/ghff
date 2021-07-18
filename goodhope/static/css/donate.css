@@ -93,14 +93,14 @@
 }
 
 .donate__card--1 {
-    background-image: url('/static/images/Educaion.jpg');
+    background-image: url(https://www.linkpicture.com/q/Educaion.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .donate__card--2 {
-    background-image: url('/static/images/new\ healh.jpg');
+    background-image: url(https://www.linkpicture.com/q/healh-care.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
