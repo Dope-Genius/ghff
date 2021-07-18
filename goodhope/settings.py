@@ -188,5 +188,5 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
     }
 
-import django_heroku
-django_heroku.settings(locals())
+# import django_heroku
+# django_heroku.settings(locals())
