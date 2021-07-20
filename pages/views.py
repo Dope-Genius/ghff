@@ -8,8 +8,8 @@ from .models import Contact
 
 
 def index(request):
-  # queryset = Post.objects.filter(featured=True)
-  queryset = Post.objects.order_by('-timestamp')[0:3]
+  queryset = Post.objects.filter(featured=True)[0:3]
+  # queryset = Post.objects.order_by('-timestamp')[0:3]
   context = {
     'object_list': queryset
   }

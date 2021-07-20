@@ -346,6 +346,7 @@ ul .active:hover {
 
 .about-us .para {
   line-height: 1.8;
+  padding: 0 1rem;
 
 }
 
@@ -565,6 +566,7 @@ ul .active:hover {
   background: linear-gradient(180deg, #5A962F 8.96%, rgba(72, 117, 40, 0.77) 100.65%, rgba(255, 255, 255, 0) 93.100%),
   url(https://www.linkpicture.com/q/woman_carrying_child.jpg);
   min-height: 12rem;
+  background-position: center;
   padding: 2rem 2rem;
 }
 

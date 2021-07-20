@@ -18,7 +18,7 @@
 </head>
 
 <style>
-  @media only screen and (max-device-width: 700px) { 
+  @media only screen and (max-device-width: 900px) { 
     .blog {
         margin: 6rem auto;
         text-align: center;
@@ -34,13 +34,19 @@
       object-fit: cover;
       object-position: bottom;
       text-align: center;
+      margin: 0 auto;
     }
 
-  .blog-content {
-    padding: 0 2rem;
-    padding-bottom: 3rem;
-  }
-  }
+    .blog-content {
+      padding: 0 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .blog--image {
+      padding-right: 0rem;
+    }
+
+}
 
 
 </style>
@@ -91,7 +97,7 @@
   <section>
     {% for post in queryset %}
     <div class="blog" style="border-radius: 10px;">
-      <div class="blog--image" style="margin: 0 auto; border-radius: 10px;">
+      <div class="blog--image" style="border-radius: 10px;">
           <img src="{{ post.thumbnail.url }}" alt="" class="img">
       </div>
   
@@ -100,7 +106,7 @@
           <p class="para blog--para">
           {{ post.overview}}  
           </p>
-          <p class="blog--date">posted on {{ post.timestamp }}</p>
+          <!-- <p class="blog--date">posted on {{ post.timestamp }}</p> -->
           <a href="{{ post.get_absolute_url }}" class="btn start">Read More</a>
         </div>
       </div>
@@ -145,7 +151,7 @@
   <section class="invitation pad center">
       <h2 class="main-heading">Join us Now</h2>
       <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
-      <a href="signup.html"><button class="btn btn--blue">JOIN US</button></a>
+      <a href="{% url 'getinvolved' %}"><button class="btn btn--blue">JOIN US</button></a>
   </section>
   
   
