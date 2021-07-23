@@ -1,5 +1,5 @@
 .billboard {
-  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/getinvolved.jpg');
+  background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%),;
   background-position: center;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .involve-2 {
-  background: linear-gradient(102deg, rgba(35, 71, 8, 0.799) 0%, rgba(87, 146, 45, 0.687) 100%), url(../images/healh\ care.jpg);
+  background: linear-gradient(102deg, rgba(35, 71, 8, 0.799) 0%, rgba(87, 146, 45, 0.687) 100%), url(https://www.linkpicture.com/q/healh-care.jpg);";
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--green);

@@ -54,14 +54,14 @@
       </div>
   
       <div>
-          <h2 class="blog-header">{{ post.title }}</h2>
-          <p class="para blog--para">
-          {{ post.overview}}  
-          </p>
-          <p class="blog--date">posted on {{ post.timestamp}}</p>
-          <a href="{{ post.get_absolute_url }}" class="btn start">Read More</a>
-        </div>
+        <h2 class="blog-header">{{ post.title }}</h2>
+        <p class="para blog--para">
+        {{ post.overview}}  
+        </p>
+        <p class="blog--date">posted on {{ post.timestamp}}</p>
+        <a href="{{ post.get_absolute_url }}" class="btn start">Read More</a>
       </div>
+
     </div>  <!-- <hr> -->
     {% endfor %}
 

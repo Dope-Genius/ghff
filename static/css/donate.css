@@ -1,5 +1,5 @@
 .billboard {
-    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/children.jpg');
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), ;
     background-position: 40% 60% ;
 }
 
@@ -29,8 +29,8 @@
     font-family: 'Roboto', sans-serif;
     line-height: 2;
     margin: 0 auto;
-    width: 25rem;
     text-align: center;
+    padding: 2rem;
     padding-bottom: 4rem;
 }
   
@@ -93,14 +93,14 @@
 }
 
 .donate__card--1 {
-    background-image: url(/images/Educaion.jpg);
+    background-image: url(https://www.linkpicture.com/q/Educaion.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .donate__card--2 {
-    background-image: url(/images/new\ healh.jpg);
+    background-image: url(https://www.linkpicture.com/q/new-healh.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }

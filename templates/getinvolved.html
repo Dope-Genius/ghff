@@ -27,7 +27,7 @@
 
   <section class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(68, 151, 9, 0.687) 100%), url(https://www.linkpicture.com/q/getinvolved.jpg); background-position: center;">
       <nav class="bill-nav">
-      <a href="index.html"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+      <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
       <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
     </nav>
 
@@ -50,15 +50,15 @@
 
     <div class="involve involve-2" >
       <div class="arrow-down"></div>
-      <p class="main-heading" > SPONSORHIP</p>
+      <p class="main-heading" > SPONSORSHIP</p>
       <hr> 
-      <p class="text"  data-aos="fade-up" data-aos-duration="800">Goodhope Flourish Foundation is a non-profit organization creating initiatives, programs and campaigns that support healthcare, education, sensitization and Advocacy for  indigents, people Living with disabilities, girlchild and human rights. Without your support we can not inspire hope or flourish lives. You can sponsor a program or campaign</p>
+      <p class="text"  data-aos="fade-up" data-aos-duration="800">Goodhope Flourish Foundation is a non-profit organization creating initiatives, programs and campaigns that support healthcare, education, sensitization and advocacy for  indigents, people Living with disabilities, girlchild and human rights. Without your support we can not inspire hope or flourish lives. You can sponsor a program or campaign</p>
     </div>
 
     <div class="involve">
       <p class="main-heading">PARTNERSHIP</p>
       <hr> 
-      <p class="text"  data-aos="fade-up" data-aos-duration="800">Partnerships are gateway to achieving our core objectives as a foundation. That's why it is our greatest delight to welcome you as a partner. GHFF is an organization with professional operational standard and principles, together we will impact the lives of people.</p>
+      <p class="text"  data-aos="fade-up" data-aos-duration="800">Partnerships are gateway to achieving our core objectives as a foundation. That is why it is our greatest delight to welcome you as a partner. GHFF is an organization with professional operational standard and principles, together we will impact the lives of people.</p>
     </div>
 
     <div class="involve involve-contact">
@@ -68,7 +68,7 @@
       <p class="text">Get involved today, contact us</p>
 
       <div class="involve-btn">
-        <a href="contact.html" class="btn btn--work"> CONTACT US</a>
+        <a href="{% url 'contact' %}" class="btn btn--work"> CONTACT US</a>
       </div>
     
     </div>
@@ -78,5 +78,4 @@
   {% include 'scripts.html' %}
 
 </body>
-
 </html>

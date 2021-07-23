@@ -1,5 +1,5 @@
 .billboard {
-    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/sensizaion.jpg');
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%),;
     background-position: 20% 30% ;
     background-size: 1350px 1080px;
 }
@@ -22,15 +22,17 @@
     font-size: 1.8rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 
 .blog--image {
-    max-width: 20rem;
     padding-right: 2rem;
     /* height: 300px; */
     object-fit: cover;
     object-position: bottom;
+    width: 100%;
+    flex: 0 0 40%;
+
 }
 
 .blog--image img {
@@ -76,7 +78,7 @@
     text-transform: uppercase;
     color: black;
     font-weight: 600;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -133,7 +135,7 @@ hr {
   }
 
   
-@media only screen and (max-device-width: 1000px) { 
+/* @media only screen and (max-device-width: 1000px) { 
     .blog {
         margin: 6rem auto;
         text-align: center;
@@ -142,7 +144,6 @@ hr {
         width: 80%;
         justify-content:space-between;
         padding: 0;
-
     }
 
     .blog-header {
@@ -160,4 +161,4 @@ hr {
     padding-right: 0;
 }
 
-}
+} */

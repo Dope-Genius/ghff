@@ -20,13 +20,13 @@
 <style>
   @media only screen and (max-device-width: 900px) { 
     .blog {
-        margin: 6rem auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        justify-content:space-between;
-        padding: 0;
+      margin: 6rem auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content:space-between;
+      padding: 0;
     }
 
     .blog--image {
@@ -67,8 +67,8 @@
   </nav>
   
   <div class="billboard--content"  data-aos="fade-up" data-aos-duration="1800">
-    <h2>BLOG</h2>
-    <p class="content--lead">Stay informed as we inspire hope and flourish lives</p>
+    <h2>Our Work</h2>
+    <p class="content--lead"></p>
   </div>
   
   <div class="proceed center">
@@ -127,32 +127,31 @@
   
   <section class="statistics pad-x">
     <div class="stat--text">
-        <p>We are on a <br> mission to help</p>
-        <button class="btn btn--donate">Donate</button>
+      <p>We are on a <br> mission to help</p>
+      <button class="btn btn--donate">Donate</button>
     </div>
 
     <div class="stat--count">
-        <div class="count-no">500+</div>
-        <div class="count-text">Campaign</div>
+      <div class="count-no">500+</div>
+      <div class="count-text">Campaign</div>
     </div>
 
     <div class="stat--count">
-        <div class="count-no">30+</div>
-        <div class="count-text">Donors</div>
+      <div class="count-no">30+</div>
+      <div class="count-text">Donors</div>
     </div>
 
     <div class="stat--count">
-        <div class="count-no">1500</div>
-        <div class="count-text">Lives Saved</div>
+      <div class="count-no">1500</div>
+      <div class="count-text">Lives Saved</div>
     </div>
   </section>
 
   <section class="invitation pad center">
-      <h2 class="main-heading">Join us Now</h2>
-      <p class="para">Join us today to get our Newsletters and become a Member of the GoodHope Flourish Foundation team.</p>
-      <a href="{% url 'getinvolved' %}"><button class="btn btn--blue">JOIN US</button></a>
+    <h2 class="main-heading">Join us Now</h2>
+    <p class="para">Join us today to get our Newsletters and become a Member of the GoodHope Flourish Foundation team.</p>
+    <a href="{% url 'getinvolved' %}"><button class="btn btn--blue">JOIN US</button></a>
   </section>
-  
   
   {% include 'footer.html' %}
   {% include 'scripts.html' %}

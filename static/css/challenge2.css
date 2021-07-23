@@ -1,5 +1,5 @@
 .billboard {
-    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%),;
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url('/images/challenge.jpeg');
     background-position: 30% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,10 +100,30 @@
 }
 
 .violence {
-    background-color: var(--blue);
+    background: linear-gradient(102deg, rgba(14, 78, 19, 0.799) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/Rape_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding-top: 3.5rem;
     padding-bottom: 2rem;
+}
+
+.fa-female {
+    font-size: 12rem;
+}
+
+#female-icon {
+    color: var(--blue);
+}
+
+.fa-male{
+    font-size: 7rem;
+    padding-top: 0.7rem;
+}
+
+#male-icon {
+    color: var(--blue);
+    padding-left: 0.3rem;
 }
 
 .violence .boys-girls {
@@ -118,12 +138,11 @@
 
 .violence-2 {
     color: white;
-    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(https://www.linkpicture.com/q/Rape_1.jpg);
+    background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url(../images/Rape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 30%;
 }
-
 
 .count-percent {
     font-size: 4rem;
@@ -132,6 +151,10 @@
     margin: 1rem auto;
     font-weight: bold;
     color: var(--green);
+}
+
+#violence-count {
+    display: inline;
 }
 
 .white {
@@ -177,6 +200,18 @@ p .blue {
     .billboard {
         background-position: 55% 10%;
     }
+
+    .fa-female {
+        font-size: 7rem;
+    }
+
+    .fa-male {
+        font-size: 4rem;
+    }
+    .violence .boys-girls {
+        font-size: 2rem;
+    }
+
 }    
 
 
