@@ -48,7 +48,6 @@
 
 }
 
-
 </style>
 
 <body class="body">
@@ -63,7 +62,7 @@
 
 <section class="billboard" class="billboard" style="background: linear-gradient(102deg, rgba(34,68,9,0.7987570028011204) 0%, rgba(119,191,67,0.6867121848739496) 100%), url({% static 'images/sensizaion.jpg' %}); background-position: center; background-size: cover;">
     <nav class="bill-nav">
-    <a href="index.html"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
+    <a href="{% url 'index' %}"><div class="logo" id="bill-logo"><img src="{% static 'images/ghfflogowhite.png' %}" alt="goodhope logo" ></div></a>
     <div class="menu" id="body-main_nav">MENU  <i class="fas fa-bars"></i></div>
   </nav>
   
@@ -150,7 +149,7 @@
 
   <section class="invitation pad center">
       <h2 class="main-heading">Join us Now</h2>
-      <p class="para">Join us today to receive updates, to get our newsletter, keep track of your donations and become a member of the GoodHope Flourish foundation team.</p>
+      <p class="para">Join us today to get our Newsletters and become a Member of the GoodHope Flourish Foundation team.</p>
       <a href="{% url 'getinvolved' %}"><button class="btn btn--blue">JOIN US</button></a>
   </section>
   

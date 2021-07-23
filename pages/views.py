@@ -20,8 +20,8 @@ def about(request):
 
 
 def blog(request):
-  post_list = Post.objects.all() 
-  paginator = Paginator(post_list, 2)
+  post_list = Post.objects.order_by('-timestamp') 
+  paginator = Paginator(post_list, 10)
   page_request_var = 'page'
   page = request.GET.get(page_request_var)
 

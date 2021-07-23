@@ -187,4 +187,5 @@ TINYMCE_DEFAULT_CONFIG = {
     }
 
 import django_heroku
+
 django_heroku.settings(locals(), staticfiles=False)
